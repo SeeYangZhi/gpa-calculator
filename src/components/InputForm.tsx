@@ -1,17 +1,13 @@
 "use client";
 
-import { v4 as uuidv4 } from "uuid";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { v4 as uuidv4 } from "uuid";
 import * as z from "zod";
-import { Input } from "@/components/ui/input";
-import {
-  SelectValue,
-  SelectTrigger,
-  SelectItem,
-  SelectContent,
-  Select
-} from "@/components/ui/select";
+
+import { zodResolver } from "@hookform/resolvers/zod";
+
+import { Course } from "../types/course.types";
+
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -21,7 +17,14 @@ import {
   FormLabel,
   FormMessage
 } from "@/components/ui/form";
-import { Course } from "./course.types";
+import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue
+} from "@/components/ui/select";
 // import { toast } from "@/components/ui/use-toast";
 
 interface InputFormProps {

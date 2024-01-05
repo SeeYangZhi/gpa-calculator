@@ -1,12 +1,11 @@
 "use client";
 
+import { useState } from "react";
+
 import { Container } from "@/components/Container";
 import { GPATable } from "@/components/GPATable";
 import { InputForm } from "@/components/InputForm";
-
-import { useState } from "react";
-
-import { Course } from "@/components/course.types";
+import type { Course } from "@/types/course.types";
 
 export default function Home() {
   const [courses, setCourses] = useState<Course[]>([]);

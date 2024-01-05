@@ -1,9 +1,10 @@
 "use client";
 
 import * as React from "react";
+
 import { DotsHorizontalIcon } from "@radix-ui/react-icons";
+import type { ColumnDef } from "@tanstack/react-table";
 import {
-  ColumnDef,
   flexRender,
   getCoreRowModel,
   getFilteredRowModel,
@@ -11,7 +12,10 @@ import {
   useReactTable
 } from "@tanstack/react-table";
 
+import type { Course } from "../types/course.types";
+
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -29,8 +33,6 @@ import {
   TableHeader,
   TableRow
 } from "@/components/ui/table";
-import { Course } from "./course.types";
-import { Checkbox } from "./ui/checkbox";
 
 export function GPATable(props: {
   courses: Course[];
