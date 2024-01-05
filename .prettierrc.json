@@ -16,8 +16,5 @@
   "singleQuote": false,
   "tabWidth": 2,
   "trailingComma": "none",
-  "useTabs": false,
-  "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
-  "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true
+  "useTabs": false
 }
