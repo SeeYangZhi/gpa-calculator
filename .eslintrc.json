@@ -16,6 +16,7 @@
     "tailwindcss"
   ],
   "rules": {
+    "prettier/prettier": "error",
     "no-console": 1, // Means warning
     "@typescript-eslint/no-explicit-any": "off",
     "@next/next/no-html-link-for-pages": "off",
